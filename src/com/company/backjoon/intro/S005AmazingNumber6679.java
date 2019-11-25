@@ -5,7 +5,7 @@ package com.company.backjoon.intro;
  * Date : 2019-11-25
  * Remark :
  */
-public class AmazingNumber6679 {
+public class S005AmazingNumber6679 {
     public static void main(String[] args) {
 
 //        System.out.println(sumString("2992"));

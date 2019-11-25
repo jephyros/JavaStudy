@@ -8,7 +8,7 @@ import java.util.List;
  * Date : 2019-11-21
  * Remark : https://www.acmicpc.net/problem/4673
  */
-public class Selfnumber {
+public class S001Selfnumber {
 
     public static void main(String[] args) {
         //최대수치

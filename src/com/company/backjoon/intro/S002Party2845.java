@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * Date : 2019/11/23
  * Remark : https://www.acmicpc.net/problem/2845
  */
-public class Party2845 {
+public class S002Party2845 {
     public static void main(String[] args) throws Exception {
 
 

@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * Date : 2019-11-22
  * Remark : https://www.acmicpc.net/problem/6603
  */
-public class Lotto6603 {
+public class S003Lotto6603 {
 
     public static void main(String[] args) throws Exception {
 

@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
  * Date : 2019/11/23
  * Remark : https://www.acmicpc.net/problem/3460
  */
-public class Binary3460 {
+public class S004Binary3460 {
     public static void main(String[] args) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
