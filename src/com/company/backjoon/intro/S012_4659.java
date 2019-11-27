@@ -10,6 +10,8 @@ public class S012_4659 {
 
         String tmpstr ="test";
 
+
+
         System.out.printf("<%s> is %s",tmpstr, fn(tmpstr) ? "is acceptable.":"is not acceptable.");
 
     }
