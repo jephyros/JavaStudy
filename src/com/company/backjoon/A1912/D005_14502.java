@@ -1,4 +1,4 @@
-package com.company.backjoon.dfs;
+package com.company.backjoon.A1912;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
