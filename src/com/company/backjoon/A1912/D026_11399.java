@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Remark : https://www.acmicpc.net/problem/11399 ATM
  */
 
-public class D025_11399 {
+public class D026_11399 {
     public static void main(String[] args) {
         //int n = 5;
         Scanner scanner = new Scanner(System.in);
