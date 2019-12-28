@@ -23,6 +23,7 @@ public class D027_11047 {
         int balance = t;
         for(int i = n-1;i>=0;i-- ){
             if (balance ==0) break;
+
             if(data[i]<=balance){
                 int c = balance / data[i];
                 cnt += c;
