@@ -25,6 +25,7 @@ public class D030_2206 {
         int dr[] ={-1,1,0,0};
         int dc[] ={0,0,-1,1};
         int[][] data = new int[rowcnt][colcnt];
+        int[][][] visit = new int[rowcnt][colcnt][2];
         for(int i = 0;i<rowcnt;i++){
             String str = br.readLine();
             for(int j =0;j<colcnt;j++){
@@ -44,7 +45,7 @@ public class D030_2206 {
         int resultcnt = 0;
         Queue<int[]> q = new LinkedList<>();
 
-        data[0][0] =2; //방문
+        visit[0][0][1] =2; //방문
         q.add(new int[]{0,0,1,0});
         while (!q.isEmpty()){
             int[] poll = q.poll();
@@ -54,6 +55,7 @@ public class D030_2206 {
             int cnt = poll[3];
             if(r == rowcnt -1 && c == colcnt -1){
                 resultcnt = cnt+1;
+                break;
             }
             for(int i =0;i<4;i++){
                 int mr = r + dr[i];
@@ -61,16 +63,19 @@ public class D030_2206 {
                 //범위안에 좌표가 있을때만 이동
                 if(mc >= 0 && mc < colcnt && mr >=0 && mr < rowcnt ){
                     //이동할곳이 0 이거나 벽부수기 횟수가 남아있으면
-                    if(data[mr][mc]==0 || (data[mr][mc]==1 && bal > 0)){
-                        if(data[mr][mc]==0){
-                            data[mr][mc]=2;
-                            q.add(new int[]{mr,mc,bal,cnt + 1});
-                        }else{
-                            data[mr][mc]=2;
-                            q.add(new int[]{mr,mc,bal-1,cnt + 1});
-                        }
+                    if(data[mr][mc]==0){
+                        if (visit[mr][mc][bal] == 1) continue;
+                        visit[mr][mc][bal]=1;
+                        q.add(new int[]{mr,mc,bal,cnt + 1});
+                    }
+                    if(data[mr][mc]==1 && bal > 0){
+                        if (visit[mr][mc][bal-1] == 1) continue;
+                        visit[mr][mc][bal-1]=1;
+                        data[mr][mc]=2;
+                        q.add(new int[]{mr,mc,bal-1,cnt + 1});
 
                     }
+
                 }
             }
 
