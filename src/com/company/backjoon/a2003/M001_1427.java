@@ -25,7 +25,7 @@ public class M001_1427 {
         Arrays.sort(arr);
 
         for (int i = m-1 ; i>=0; i--) {
-            System.out.printf("%d",arr[i]);
+            System.out.printf("%d",arr[i] );
         }
 
 
