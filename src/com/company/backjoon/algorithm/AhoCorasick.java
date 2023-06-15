@@ -8,6 +8,7 @@ public class AhoCorasick {
     }
 
     public void addPattern(String pattern) {
+        //테스트
         AhoCorasickNode current = root;
         for (char c : pattern.toCharArray()) {
             AhoCorasickNode child = current.getChild(c);
